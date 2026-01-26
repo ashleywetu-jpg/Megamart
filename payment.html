@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Students Marks Table</title>
+  <link rel="stylesheet" href="styles.css">
+ <style>
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <table class="marks-table" aria-label="Students marks table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Row for David -->
+      <tr class="row-spacer">
+        <td rowspan="3">1</td>
+        <td rowspan="3">David</td>
+        <td>Maths</td>
+        <td>80</td>
+      </tr>
+      <tr class="row-spacer">
+        <td>Physics</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Computers</td>
+        <td>70</td>
+        </tr>
+    </tr>
+</table>

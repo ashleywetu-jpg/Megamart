@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here!!-Megamart</title>
+<link rel="stylesheet" href="css/forms.css">
+
+
+</head>
+<body>
+
+
+    <form action="">
+
+<legend><marquee behavior="scroll" direction="left">Join us today!</marquee></legend>
+
+<br> <br>
+<!---legends are used to give headings to a form but one can use a h1 tag too--->
+
+<label for="fname">First Name:</label>
+<input type="text" placeholder="Enter your first name here" id="fname"  required  >
+<!---input tag is impt for text validation since there are diff input types ie numbers or letters-->
+<!---placeholder is the sort of transparent text that appears in the box before one begins to type-->
+<!---the input is linked to the label using the for attribute thus id attribute is used as a unique identifier-->
+<!---the value in the id attribute is the same as the for attribute in the label tag-->
+<!--required tag is used to make the field mandatory to fill in-->
+<br><br>
+
+<label for="lname">Last Name:</label>
+<input type="text" placeholder="Enter your last name here" id="lname"  required  >
+<br><br>
+
+<label for="email">Email:</label>
+<input type="email" placeholder="Eg: abc@gmail.com" id="email"  required  >
+<!---type email is used to validate that the input is in email format-->    
+
+<br><br>
+
+<label for="password">Password:</label>     
+<input type="password" placeholder="Symbols are not allowed" id="password"  required  >
+<!---type password is used to hide the characters typed in the input box-->
+
+<br><br>
+
+<label for="p.number">Phone Number:</label>
+<input type="tel" placeholder="Eg: 0734567890" id="p.number" required>
+<!--input type tel is used to validate phone numbers-->
+<br><br>
+
+<label for="Address">Address:</label>
+<input type="text" placeholder="Enter your address here" id="Address" required>
+
+<br><br>
+
+<label for="age">Enter your age(year(s))</label>
+<input type="number" placeholder="Eg: 18" required  id="age" required  >
+<!---input type number is used to validate that only numbers are entered-->
+
+<br><br>
+
+<label for="YOB">Birthday</label>
+<input type="date" id="YOB" required >
+<!---input type date is used to validate date format-->
+
+<br><br>
+
+<label for="dt">Date and Time</label>
+<input type="datetime-local" id="dt" required >
+<!---input type datetime-local is used to validate date and time format-->
+
+<br><br>
+
+<label for="photo"> Upload CV / Document</label>
+<input type="file" id="photo" required >
+<!---input type file is used to upload files--->
+
+<br><br>
+
+<!--DROPDOWN MENU-->
+<!---select tag is used to create a dropdown menu--->
+<label for="nationality">Select nationality:</label>
+<select name="" id="nationality">
+    <option value=""disabled>---Choose one---</option>
+    <!---disabled is used to make the option unselectable--->
+    <option value="American">American</option>
+    <option value="Kenyan">Kenyan</option>
+    <option value="Ugandan">Ugandan</option>
+    <option value="Tanzanian">Tanzanian</option>
+    <option value="Rwandan">Rwandan</option>
+    <option value="Other">Other</option>
+
+
+</select>
+
+<!--END-->
+<br><br>
+
+<label for="">Gender:</label>
+<br>
+<input type="radio" id="male" name="gender">
+<label for="male">Male</label>
+<br>
+<input type="radio" id="female" name="gender">
+<label for="female">Female</label>
+<br>
+<input type="radio" id="other" name="gender">
+<label for="other">Other</label>
+<br>
+<!---input type radio is used to create options where only one option can be selected--->
+<!---name attribute is used to group the radio buttons together so that only one can be selected at a time--->
+
+<!--END-->
+<br>
+
+<label for="language">Choose web programming language(s)</label>
+<br>
+<input type="checkbox" id="php"  name="php">
+<label for="php">php</label>
+<br>
+<input type="checkbox" id="html" name="html">
+<label for="html">html</label>
+<br>
+<input type="checkbox" id="css" name="css">
+<label for="css">css</label>        
+<br>
+<!---input type checkbox is used to create options where multiple options can be selected--->
+<input type="checkbox" id="javascript" name="javascript">
+<label for="javascript">javascript</label>  
+<br>
+<input type="checkbox" id="go" name="go">
+<label for="go">go</label>  
+<br><br>
+<!--name attribute is used to group the checkboxes together so that multiple options can be selected-->
+<!--END-->
+
+<label for="mssg">Describe yourself briefly</label>
+<br>
+<textarea name="mssg" id="mssg" cols="80" rows="20" placeholder="Type here..."></textarea>
+
+<br><br>
+<!---You can use either button or input to create a submit button--->
+<input type="button" value="Register">
+<br>
+<button type="submit">Register</button>
+<button type="reset">reset</button>
+<!---input type submit is used to create a submit button--->    
+
+
+
+    </form>
+    
+</body>
+</html>

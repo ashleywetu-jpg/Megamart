@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megamart home </title>
+
+    <!---favicons are icons beside the name of the webpage at the top--->
+    <link rel="icon" href="Product img/home icon.png">
+    <!---end of Favicons--->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #4169E1;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #FFFDD0;
+            color: #4169E1;
+        }
+
+        /* Search Bar */
+        .search-container {
+            background-color: #FFFDD0;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .search-container input {
+            padding: 12px 20px;
+            width: 300px;
+            border: 2px solid #4169E1;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .search-container input:focus {
+            outline: none;
+            box-shadow: 0 0 10px #4169E1;
+            width: 350px;
+        }
+
+        .search-container button {
+            padding: 12px 30px;
+            margin-left: 10px;
+            background-color: #0066CC;
+            color: black;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .search-container button:hover {
+            background-color: #4169E1;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #FFB6C1, #FFFDD0);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #4169E1;
+            font-size: 50px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: black;
+            margin: 15px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Main Content Sections */
+        .section {
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-intro {
+            background-color: #FFB6C1;
+        }
+
+        .section-features {
+            background-color: #FFFDD0;
+        }
+
+        .section-featured {
+            background-color: #FFB6C1;
+        }
+
+        .section h2 {
+            color: #4169E1;
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section p {
+            color: black;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+
+        /* Featured Products Section */
+        .featured-products {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(65, 105, 225, 0.2);
+        }
+
+        .product-card h3 {
+            color: #4169E1;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            background-color: #0066CC;
+            color: black;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #4169E1;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4169E1;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        hr {
+            margin: 30px 0;
+            border: none;
+            height: 2px;
+            background-color: #4169E1;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">🏠 Home</a></li>
+            <li><a href="product.html">📦 Products</a></li>
+            <li><a href="css/services.html">🛠️ Services</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="employee.html">👥 Employees</a></li>
+            <li><a href="lists.html">🥬 Lists</a></li>
+            <li><a href="payment.html">💳 Payment</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search products, deals, and more...">
+        <button>Search</button>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🛍️ Welcome to Megamart</h1>
+        <p style="margin-top: 0;">Your Ultimate Online Marketplace</p>
+    </div>
+
+    <!-- Introduction Section -->
+     <!--the tag mark is used to highlight words in a sentence-->
+    <div class="section section-intro">
+        <h2>About MegaMart</h2>
+        <p>MegaMart is your one-stop <b>online marketplace</b> for <mark>electronics, home, fashion, groceries</mark> and more — offering great prices, secure checkout, fast shipping, and effortless returns. Shop smart, save time, and enjoy delivery you can trust.</p>
+        
+        <p style="font-weight: bold; margin-top: 20px;">MegaMart brings millions of quality products to your <u><b>fingertips</b></u> with a simple, secure shopping experience. From everyday essentials to the latest gadgets and curated lifestyle picks, we combine competitive prices, verified sellers, and intelligent recommendations so you find exactly what you need — fast.</p>
+    </div>
+
+    <hr>
+
+    <!-- Featured Products Section -->
+    <div class="section section-features">
+        <h2>🌟 Featured Collections</h2>
+        
+        <div class="featured-products">
+            <div class="product-card">
+                <h3>Electronics</h3>
+                <p>Latest gadgets and technology at great prices</p>
+                <button class="cta-button">Browse</button>
+            </div>
+            <div class="product-card">
+                <h3>Fashion</h3>
+                <p>Trendy clothing and accessories for everyone</p>
+                <button class="cta-button">Browse</button>
+            </div>
+            <div class="product-card">
+                <h3>Home & Garden</h3>
+                <p>Everything you need for a beautiful home</p>
+                <button class="cta-button">Browse</button>
+            </div>
+            <div class="product-card">
+                <h3>Groceries</h3>
+                <p>Fresh and quality food delivered to your door</p>
+                <button class="cta-button">Browse</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Why Choose Us Section -->
+    <div class="section section-featured">
+        <h2>✨ Why Choose MegaMart?</h2>
+        <p><i><b>Trusted by millions, loved by customers worldwide</b></i>. Veritatis aspernatur a earum voluptatum repellendus harum, nihil autem, consequuntur ad hic voluptatibus ducimus corporis minima sed corrupti dignissimos beatae commodi rem!</p>
+
+        <p style="color: black; margin-top: 20px;">Our secure payment options, transparent tracking, and hassle-free returns make buying online worry-free. With frequent deals, tailored offers, and quick delivery options, MegaMart is built to save you time and money without sacrificing choice or convenience.</p>
+
+        <p style="color: black;">Quis facilis modi at aliquid doloribus consequuntur eius reiciendis, repellendus excepturi incidunt illum nobis. Asperiores, nobis blanditiis. Excepturi omnis explicabo doloremque voluptatibus recusandae, libero quod, dolorem incidunt, rem debitis suscipit?</p>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="cta-button">Shop Our Products</button>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MegaMart. All rights reserved. Your trusted online marketplace.</p>
+        <p>Contact us | Privacy Policy | Terms & Conditions</p>
+    </footer>
+
+</body>
+
+</html>

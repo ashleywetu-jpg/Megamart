@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List page- Megamart </title>
+
+    <link rel="icon" href="Product img/lists icon.png">
+
+<style>
+h1{
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+<!---padding is spacing inside anything that looks like a box --->
+
+
+
+body{
+    background-color: #FFFDD0;
+    margin: 40px;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+    <a href="home.html"> HOME</a>
+    <br>
+    <a href="product.html"> PRODUCTS</a>
+    <br>
+    <a href="employee.html"> EMPLOYEES</a>
+    <br>
+<hr>
+<!---there are 4 types of lists in HTML: ordered, unordered, definition, and menu lists and nested lists-->
+<!---ordered list--->
+
+<h1>Top 4 selling products this month!</h1>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore nesciunt facere ipsam nostrum harum sint quo voluptatibus voluptas voluptatem aliquid molestiae, suscipit provident veniam non rem nam officiis unde reiciendis.
+Provident optio aliquid nihil ea ipsam doloremque, sint nostrum porro illum, repellat ipsa consequatur natus, quis debitis culpa blanditiis amet corrupti quod minima non libero? Laborum rem cupiditate illo odio!</p>
+
+<!--Ol tag is used for ordered lists  then li stands for list items -->
+<!--to change the type of numbers you have to introduce an attribute called type btwn the first ol tag-->
+
+<ol type="I">
+    <li>Wireless bluetooth headphones</li>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, omnis doloribus. Quas soluta expedita ex eos amet? Ipsum quisquam quidem illum fugit laborum fuga? Id quam quis officiis quia magnam.
+    Fugit, nostrum veritatis! Ad sunt pariatur asperiores et quisquam provident temporibus explicabo, praesentium error aut doloremque? Ut voluptatem blanditiis sit, iusto quisquam reprehenderit, nisi deserunt, praesentium debitis vel beatae consectetur!</p>
+    
+    <li>Organic cotton t-shirt</li>
+    <li>Yoga mat</li>
+    <li>Smartphone</li>
+    <img src="Product img/image copy 6.png" alt="">
+</ol>
+
+<!---end of ordered list--->
+<!--if you wany to display more info abt a specific product or imgn you can just go after the listed item and add the p or img tag--->
+    
+<!--unordered list--->
+
+<h1>Mens clothing</h1>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ea blanditiis iusto earum molestias harum provident nemo omnis at laudantium. Blanditiis, voluptatibus accusamus eius illum quod explicabo accusantium eveniet. Ad.
+Maiores nisi voluptate autem, dolor sed quibusdam aperiam labore, minus amet, impedit ipsa aliquid ipsum tempore nulla iure dolores odit cum eligendi ex delectus deserunt! Obcaecati quidem mollitia beatae maiores.
+Quas aut accusantium debitis quaerat error, laboriosam porro ducimus, officia sapiente esse nihil nulla recusandae optio consequuntur voluptatem tempore laudantium totam at animi. Rerum nisi suscipit voluptatibus expedita, architecto qui?</p>
+
+
+<!---in unordered lists the tag is <ul> and each list item is <li>--->
+<!---to change the bullet style you can add an attribute called style then list style type btwn the first ul tag--->
+<ul style="list-style-type: georgian;">
+    <li>Casual t-shirts</li>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dignissimos rerum obcaecati, et enim rem dicta voluptatem inventore, amet dolore nostrum, non consectetur? Error nulla et laborum quia veritatis maxime?</p>
+    
+    <li>Jackets and coats</li>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consequatur corrupti, minima delectus porro magnam nulla commodi temporibus neque cumque corporis dolorum, ex eius numquam repellat amet. Magnam, sint cumque.</p>
+   
+    <li>Jeans</li>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur impedit quod perspiciatis debitis, odio praesentium eligendi. Cum nemo omnis voluptatibus. Molestiae in provident vero minus modi omnis? Explicabo, accusamus.</p>
+    
+    <li>Sneakers</li>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati pariatur suscipit molestiae blanditiis dolor iure natus soluta beatae cum. Fugiat, ratione nostrum debitis veniam officia aut repudiandae repellat voluptates!</p>
+    
+    <li>Formal shirts</li>
+    <img src="Product img/image copy 7.png" alt="">
+</ul>
+
+<!---ASSIGNMENT:do research on description list-->
+<!---end of unordered list-->
+
+<!---nested lists-->
+<!---when writing a nested list its best if you start with the main list first then you will move to the inside list-->
+
+<h1><u>Geeksforgeeks Courses</u></h1>
+<!--firstly u begin with either the ul or the ol tag then inside the li tags is where you add another ul tag to list the second list-->
+<ul style="list-style-type: square;">
+    <li>DSA
+        <ul>
+            <li>Array</li>
+            <li>Linked List</li>
+            <li>Stack</li>
+            <li>Queue</li>
+        </ul>
+    </li>
+    <li>Web technologies
+        <ul>
+            <li>HTML
+<ul>
+    <li>Basics of HTML</li>
+    <li>Forms</li>
+    <li>Semantic HTML</li>
+</ul>
+
+            </li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </li>
+    <li>Aptitude</li>
+    <li>Gate</li>
+    <li>Placement</li>
+</ul>
+
+<!--create a nested list using ol tags-->
+<br>
+<hr>
+<h1 style="text-align: center; color: #4169E1; font-weight: bold;"><u><b>Lets talk veggies!</b></u></h1>
+<ol type="1">
+    <li>Fruits
+        <ol type="1">
+            <li>Mango</li>
+            <li>Orange</li>
+        </ol>
+    </li>
+    <li>Vegetables
+        <ol type="1">
+            <li>Cabbage</li>
+            <li>capsicum
+<ol>
+    <li>Green capsicum</li>
+    <li>Yellow capsicum</li>
+    <li>Red capsicum</li>
+</ol>
+
+
+
+            </li>
+        </ol>
+    </li>
+</ol>
+
+<!---favicons are icons beside the name of the webpage at the top-->
+
+
+
+
+
+
+
+</body>
+</html>

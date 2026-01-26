@@ -1,0 +1,160 @@
+h1{
+text-align: center;
+font-size: 40px;
+text-decoration: underline;
+color: #4169E1;
+font-weight: bold;
+}
+
+h2{
+text-align: center;
+font-size: 30px;        
+text-decoration: underline;
+color: #4169E1;
+font-weight: bold;
+}   
+
+/* when mentioning id names ensure you acoompany with # symbol */
+
+#shipping{
+text-align: center;
+font-size: 30px;
+text-decoration: underline;
+color: #4169E1;
+font-weight: bold;
+}
+
+body{
+    background-color: #FFFDD0;
+}
+
+#para{
+font-weight: bold;
+font-style: oblique;
+font-size: 20px;
+text-align: center;
+}
+
+/* an id name is unique and it cannot be repeated in the same document */
+/* class names can be repeated in the same document */
+/* when targeting one element use id when more than one use class */
+/* id use # symbol and class use . symbol */
+
+.new{
+ color: black;
+text-align: right;
+font-size: 25px;
+}
+
+#vip{
+background-color: #FFB6C1;
+font-size: 25px;
+text-align: left;
+margin: 40px;
+padding: 20px;
+color: black;
+border-radius: 20px;
+}
+
+#vip h3{
+font-size: 25px;    
+text-decoration: underline;
+text-align: center;
+color: #4169E1;
+font-weight: bold;
+}   
+
+#vip:hover{
+    background-color: #FFFDD0;
+    transform: scale(1.05);
+}
+
+#vip button{
+    background-color: #0066CC;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#vip button:hover{
+    background-color: rgb(136, 167, 172);
+    transform: scale(1.05);
+}
+
+#surprises{
+    text-align: center;
+    font-size: 10px;
+    text-decoration: underline;
+    color: black;
+    padding: 20px;
+    display: flex;
+    background-color: #FFB6C1;
+}
+
+#surprises:hover{
+    background-color: #FFFDD0;
+    transform: scale(1.05);
+}
+
+#surprises button:hover{
+    background-color: rgb(136, 167, 172);
+    transform: scale(1.05);
+}
+
+#delivery{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #FFB6C1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#delivery:hover{
+    background-color: #FFFDD0;
+    transform: scale(1.05);
+}
+
+#courses{
+    display: flex       ;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: #FFB6C1;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#courses div{
+    border-right: 3px solid #ffffff;
+    padding-right: 20px;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+#courses div:hover{
+    background-color: #FFFDD0;
+    transform: scale(1.05);
+    border-radius: 10px;
+}
+
+#courses div:last-child{
+    border-right: none;
+}
+
+
+
+
+
+
+
+
+
+
+
